@@ -27,6 +27,11 @@
     </head>
     <body>
         <h1 class="textcenter">Expected Value Calculator</h1>
+        <p  class="textcenter">
+            <label for="numEvents">Number of Events:</label>
+            <input type="number" id="numEvents" name="eventQuant" min="1" max = "20">
+            <div class="textcenter" id="inputTable">Enter Event Probabilities & Values:</div>
+        </p>
         <button class="button" onclick="calculateEV()">Calculate Expected Value</button>
         <p id="expectedValue" class="textcenter"></p>
 
