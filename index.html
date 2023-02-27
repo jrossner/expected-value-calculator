@@ -1,2 +1,41 @@
-# Hello World
-## check back in soon
+<!doctype HTML>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="mobile-web-app-capable" content="yes">
+        <script src="https://cdn.plot.ly/plotly-2.6.3.min.js"></script>
+        <style>
+            .button {
+                display: block;
+                margin: 0 auto;
+                width: 33%;
+                height: 4em;
+                margin: auto;
+                font-weight: "bold";
+                font-size: 1em;
+                text-align: center;
+                -webkit-appearance: none;
+                background-color: #4CAF50
+            }
+          
+            .textcenter {
+              text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="textcenter">Expected Value Calculator</h1>
+        <button class="button" onclick="calculateEV()">Calculate Expected Value</button>
+        <p id="expectedValue" class="textcenter"></p>
+
+        <script>
+            function calculateEV() {
+              let expVal;
+              
+              document.getElementById("expectedValue").innerHTML = expVal;
+            }
+        </script>
+    </body>
+</html>
